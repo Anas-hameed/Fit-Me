@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="Project/css/style.css">
+    <title>Website Design Using Bootstrap</title>
+</head>
+
+<body>
+
+    <!-- This Section Utilize Boothstrap for the NavBar Design -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a href="#" class="navbar-brand ml-3 mr-5">
+            <img src="Project/images/logo2.png" height="55px" alt="fitMe">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  py-2 px-5 mr-auto">
+                <li class="nav-item active mr-3">
+                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Forms
+                    </a>
+                    <div class="dropdown-menu fa-w-20" aria-labelledby="dropdown">
+                        <a class="dropdown-item dropitem" href="./Project/Forms/member.php">User Info</a>
+                        <a class="dropdown-item dropitem" href="./Project/Forms/fitnessplan.php">Fitness Plan</a>
+                        <a class="dropdown-item dropitem" href="./Project/Forms/workoutplan.php">Workout Plan</a>
+                        <a class="dropdown-item dropitem" href="./Project/Forms/dailylogs.php">Daily logs</a>
+                        <a class="dropdown-item dropitem" href="./Project/Forms/targets.php">Set Target</a>
+                        <div class="dropdown-divider"></div>
+                    </div>
+                </li>
+
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="#Group">Our Group</a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn  btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- This section Contain different section codes -->
+    <div class="con" id="home">
+        <!-- Contain code for the background Image and text -->
+        <div class="image set-bg" style="background-image: url('Project/images/p3.jpg');">
+            <div class="content">
+                <h1>WelCome To fitMe<br> <span>An Online Gym Platform for you</span></h1>
+            </div>
+        </div>
+
+        <div class="forms" id="forms">
+            <h1 class="title">Forms</h1>
+            <div class="diff_forms">
+                <div class="diff_item">
+
+                    <img src="Project/images/form1.jpg" alt="form-Image">
+                    <div class="btn"><a href="./Project/Forms/member.php">User Info</a></div>
+                    <p>Form for Member Registeration</p>
+                </div>
+
+                <div class="diff_item">
+                    <img src="Project/images/form3.jpg" alt="form-Image">
+                    <div class="btn"><a href="./Project/Forms/workoutplan.php">Workout Plan</a></div>
+                    <p>Form to create Workoutplan</p>
+                </div>
+
+                <div class="diff_item">
+                    <img src="Project/images/form4.jpg" alt="form-Image">
+                    <div class="btn"><a href="./Project/Forms/dailylogs.php">Daily logs</a></div>
+                    <p>Form to fill in daily logs</p>
+                </div>
+
+                <div class="diff_item">
+                    <img src="Project/images/form5 (2).jpg" alt="form-Image">
+                    <div class="btn"><a href="./Project/Forms/targets.php">Set Target</a></div>
+                    <p>Form to set your Daily, Weekly, Monthly Targets</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- This section is for Reports -->
+
+        <div class="Report" id="Report">
+            <h1 class="title">Reports</h1>
+            <div class="Reports">
+
+                <div class="Reportitem">
+                    <div class="btn"><a href="./Project/Forms/getdietplan.php">Diet Plan</a></div>
+                    <p>Generate Diet Plan based on Set Targets</p>
+                </div>
+
+                <div class="Reportitem">
+                    <div class="btn"><a href="./Project/Forms/getexerfit.php">Exercise</a></div>
+                    <p>Generate report for exercise based on Fitness Goal</p>
+                </div>
+
+                <div class="Reportitem">
+                    <div class="btn"><a href="./Project/Forms/fitnessplan.php">Fitness plan</a></div>
+                    <p>Personalized Fitnessplan Based on your Fitness</p>
+                </div>
+
+            </div>
+
+        </div>		
+
+
+        <div class="Group" id="Group">
+            <h1 class="title">Group Members</h1>
+            <div class="ourteam_wrapper">
+                <div class="team-1 team">
+                    <div class="team_member">
+                        <img src="Project/images/team1.jpg" class="img" alt="">
+                        <div class="textRoll">
+                            <div class="text"><a href="#">Hunaid Sohail</a></div>
+                            <div class="text"><a href="#">19I-2043</a></div>
+                        </div>
+                    </div>
+                    <div class="team_member">
+                        <img src="Project/images/team2.jpeg" class="img" alt="">
+                        <div class="textRoll">
+                            <div class="text"><a href="#">Hamza Nasir</a></div>
+                            <div class="text"><a href="#">19I-0700</a></div>
+                        </div>
+                    </div>
+                    <div class="team_member">
+                        <img src="Project/images/anas.jpeg" class="img" alt="">
+                        <div class="textRoll">
+                            <div class="text"><a href="#">Anas Hameed</a></div>
+                            <div class="text"><a href="#">19I-2008</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		
+		<div class="about" id="about">
+            <h1 class="title">About Us</h1>
+            <p>This is a Database Systems Project made by Hunaid Sohail Mirza, Hamza Nasir and Anas Hameed</p>
+            
+        </div>
+
+        <!-- <div class="footer">
+            <a href="#">@ Database Project</a>
+        </div> -->
+		
+        <div class="arrow">
+            <a href="#home"><img src="Project/images/arrow.png" alt="up_arrow"></a>
+        </div>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

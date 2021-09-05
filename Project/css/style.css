@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Allura', cursive;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.dropdown-menu .dropitem:hover {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: crimson;
+  border-radius: 10px;
+  margin-bottom: 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 20px;
+}
+/* Heading Styling */
+h1.title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #444444;
+  text-transform: uppercase;
+  font-size: 38px;
+  word-spacing: 25px;
+  letter-spacing: 5px;
+}
+
+/* button Styling */
+.btn a {
+  display: block;
+  width: 180px;
+  height: 35px;
+  border: 2px solid #fb2274;
+  line-height: 35px;
+  margin: 25px auto 0px auto;
+  border-radius: 15px;
+  text-align: center;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.btn a:hover {
+  background-color: #fb2274;
+  color: white;
+}
+
+.con {
+  position: relative;
+}
+
+/* Background Image Properties Set here */
+.image {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Content of Image  styling Goes here */
+.content {
+  color: white;
+  text-align: center;
+}
+.content h1 {
+  color: crimson;
+  text-shadow: 2px 2px 3px black;
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  line-height: 38px;
+}
+.content h1 span {
+  font-size: 1.8rem;
+  color: white;
+}
+.content p {
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+/* collective Padding and allignment for all  Sections */
+.about,
+.forms,
+.Group,
+.Report {
+  padding: 5% 10%;
+  text-align: center;
+}
+
+/* Styling Forms Section */
+.forms {
+  background: white;
+  color: #444444;
+  margin-bottom: 25px;
+}
+.forms h1 {
+  color: #444444;
+}
+.forms p {
+  margin-bottom: 35px;
+}
+.diff_forms {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.diff_item {
+  flex-basis: 45%;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.diff_item img {
+  width: 100%;
+  height: 300px;
+}
+.diff_item div a {
+  margin-bottom: 10px;
+  color: #444444;
+  letter-spacing: 1px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.diff_item:hover {
+  font-size: 1.5rem;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+/* This Section Contains styling for the Report Section */
+
+.Report {
+  background: #444444;
+  margin-bottom: 25px;
+  color: white;
+}
+.Report h1 {
+  color: white;
+}
+.Report .Reports {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Report .Reportitem {
+  flex-basis: 30%;
+}
+
+.Report .Reportitem a {
+  margin-bottom: 10px;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.Report img {
+  width: 100%;
+  height: 150px;
+}
+
+/* this Section Contain all the styling for the Group Members */
+.Group {
+  background-color: white;
+}
+.ourteam_wrapper .team {
+  display: flex;
+  justify-content: space-between;
+}
+.ourteam_wrapper .team-1.team {
+  margin-bottom: 25px;
+}
+.ourteam_wrapper .team_member {
+  display: block;
+  position: relative;
+  width: 50%;
+  height: auto;
+  cursor: pointer;
+  overflow: hidden;
+}
+.ourteam_wrapper .team_member .img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.ourteam_wrapper .team_member .textRoll {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.ourteam_wrapper .team_member:hover .img {
+  opacity: 0.4;
+}
+.ourteam_wrapper .team_member:hover .textRoll {
+  opacity: 1;
+}
+
+.ourteam_wrapper .team_member .textRoll .text {
+  background-color: crimson;
+  padding: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+}
+.ourteam_wrapper .team_member .textRoll .text a {
+  color: white;
+  text-decoration: none;
+}
+.ourteam_wrapper .team_member .textRoll div:nth-child(2) {
+  margin-top: 15px;
+}
+
+/* .footer{
+    width: 100%;
+    padding:20px 0px;
+    background-color: white;
+    text-align: center;
+}
+.footer a{
+   color: black;
+} */
+
+/* about Us Section styling  */
+
+.about {
+  background: #444444;
+  color: white;
+  padding: 2% 10%;
+}
+.about h1 {
+  color: white;
+}
+
+/* Arrow Styling */
+.arrow {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  background: #fb2274;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.arrow img {
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+}

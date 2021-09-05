@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Allura', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+}
+p{
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 20px;  
+}
+/* Heading Styling */
+h1.title{
+    margin-bottom: 20px;
+
+    font-family: 'Montserrat', sans-serif;
+    color: #444444;
+    text-transform: uppercase;
+    font-size: 38px;
+    word-spacing: 25px;
+    letter-spacing: 5px;
+}
+
+
+h1.title{
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-size: 38px;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+}
+
+
+/* Background Image Properties Set here */
+.image{
+
+    background-image: url('./images/form1.jpg');
+    background-repeat:no-repeat;
+    background-position:top center;
+    background-size: cover; 
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+}
+
+
+
+   
+
+ /* Styling Member Imfo */
+.Member{
+    color: white;
+    padding: 5% 10%;
+    text-align: center;
+}
+
+.Member {
+    position: relative;
+    z-index: 1;
+}
+
+.Member:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    border-radius: 10px;
+    opacity: .7;
+}
+
+
+.form_input{
+    opacity: 1;
+    margin-bottom: 15px;
+}
+.form_input input[type="text"], .form_input input[type="date"], .form_input input[type="number"]{
+    width: 250px;
+    border-radius: 15px;
+    padding: 12px 20px;
+    border: 2px solid#ccc;
+}
+
+/* button Styling */
+.form_input input[type="submit"]{
+    display: block;
+    width: 180px;
+    height: 35px;
+    border: none;
+    background-color:crimson;
+    color:white;
+    font-weight: 500;
+    line-height: 35px;
+    margin: 25px auto 0px auto;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.form_input input[type="submit"]:hover{
+    transform: scale(1.1);
+}
+
+
+
+.footer{
+    width: 100%;
+    padding:20px 0px 20px 0px;
+    background-color: #444444;
+    text-align: center;
+}
+.footer a{
+   color: white;
+}
